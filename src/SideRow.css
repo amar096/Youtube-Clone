@@ -1,0 +1,42 @@
+.siderow{
+    display: flex;
+    align-items: center;
+    /* padding: 5px 10px; */
+}
+
+.siderow_icon{
+    color: #606060;
+    font-size: large !important;
+}
+
+.siderow_title{
+    flex: 1;
+    margin: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.siderow:hover {
+    background-color: lightgray;
+    cursor:pointer;
+}
+
+.siderow:hover > .siderow_icon {
+    color: red;
+}
+
+.siderow:hover > .siderow_title {
+    font-weight: bold;
+}
+
+.siderow.selected{
+    background-color: lightgray;
+}
+
+.siderow.selected > .siderow_icon {
+    color: red;
+}
+
+.siderow.selected > .siderow_title {
+    font-weight: bold;
+}
